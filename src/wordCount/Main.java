@@ -9,8 +9,11 @@ public class Main{
         //Create hashmap
         HashMap<Integer, String> wordsHashMap = new HashMap<Integer, String>();
 
+
+        //Split string in array
+        String[] wordSplit = words.split(" ");
         //Create an arrayList from the String
-        ArrayList<String> words = new ArrayList<String>();
+        ArrayList<String> wordsList = new ArrayList<String>();
     }
     public static void main(String[] args){
         wordList();
