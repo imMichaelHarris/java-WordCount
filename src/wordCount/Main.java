@@ -13,6 +13,9 @@ public class Main{
         String[] wordSplit = words.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "").toLowerCase().split(" ");
 
         for(int i = 0; i < wordSplit.length; i++){
+            if(wordSplit[i].equals("in")){
+                System.out.println("Yes");
+            }
             wordsHashMap.put(i, wordSplit[i]);
         }
 
