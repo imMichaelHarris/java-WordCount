@@ -9,13 +9,13 @@ public class Main{
         //Create hashmap
         HashMap<Integer, String> wordsHashMap = new HashMap<Integer, String>();
 
-
         //Remove punctuation and split string in array
         String[] wordSplit = words.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "").toLowerCase().split(" ");
 
         for(int i = 0; i < wordSplit.length; i++){
-            System.out.println(wordSplit[i]);
+            wordsHashMap.put(i, wordSplit[i]);
         }
+
         //Create an arrayList from the String
         ArrayList<String> wordsList = new ArrayList<String>();
     }
