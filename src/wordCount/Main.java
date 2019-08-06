@@ -25,15 +25,19 @@ public class Main{
         //Create an arrayList that will contain Strings
         ArrayList<String> wordsList = new ArrayList<String>();
         wordsList.addAll(Arrays.asList(wordSplit));
+        System.out.println(wordsList.get(3));
 
         for(String word : wordsList){
             int wordAmt = 0;
-            for(int i = 0; i < wordsList.length; i++){
-                if(word.equals(wordsList[i])){
+            // for(int i = 0; i < wordsList.length; i++){
+            for(String wordToCheck : wordsList){
+                if(word.equals(wordToCheck)){
+                    Collection<String> removeThese = Arrays.asList(word);
                     wordAmt++;
-                    wordList.removeAll(word);
+                    wordsList.removeAll(removeThese);
                 }            
             }
+            //}
         }
     }
     public static void main(String[] args){
