@@ -25,6 +25,7 @@ public class Main{
         wordsList.addAll(Arrays.asList(wordSplit));
         System.out.println(wordsList.get(3));
 
+        HashMap<Integer, String> wordsHashMap = new HashMap<Integer, String>();
         for(String word : wordsList){
             int wordAmt = 0;
             // for(int i = 0; i < wordsList.length; i++){
@@ -36,12 +37,13 @@ public class Main{
                 }            
             }
 
-            HashMap<Integer, Strings> wordsHashMap = new HashMap<Integer, String>();
+            wordsHashMap.put(wordAmt, word);
+            wordAmt = 0;
 
             //}
         }
 
-        System.out.println(wordsList);
+        System.out.println(wordsHashMap);
     }
     public static void main(String[] args){
         wordList();
