@@ -6,4 +6,8 @@ public class WordList{
     public WordList(String list){
         this.list = list;
     }
+
+    public String getList(){
+        return list;
+    }
 }
