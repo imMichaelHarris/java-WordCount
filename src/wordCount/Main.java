@@ -27,7 +27,13 @@ public class Main{
         wordsList.addAll(Arrays.asList(wordSplit));
 
         for(String word : wordsList){
-
+            int wordAmt = 0;
+            for(int i = 0; i < wordsList.length; i++){
+                if(word.equals(wordsList[i])){
+                    wordAmt++;
+                    wordList.removeAll(word);
+                }            
+            }
         }
     }
     public static void main(String[] args){
