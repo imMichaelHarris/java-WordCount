@@ -22,10 +22,13 @@ public class Main{
             wordsHashMap.put(i, wordSplit[i]);
         }
 
-        //Create an arrayList from the String
+        //Create an arrayList that will contain Strings
         ArrayList<String> wordsList = new ArrayList<String>();
         wordsList.addAll(Arrays.asList(wordSplit));
-        System.out.println(wordsList);
+
+        for(String word : wordsList){
+
+        }
     }
     public static void main(String[] args){
         wordList();
