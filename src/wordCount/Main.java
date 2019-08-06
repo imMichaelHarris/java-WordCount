@@ -45,8 +45,12 @@ public class Main {
 
         ArrayList<HashMap.Entry<String, Integer>> wordsList = new ArrayList<HashMap.Entry<String, Integer>>();
         wordsList.addAll(wordsHashMap.entrySet());
-        System.out.println(wordsList.get(3));
         System.out.println(wordsHashMap);
+
+        //Stretch 
+        Collections.sort(wordList, new Comparator<HashMap.Entry<String, Integer>>() {
+            
+        };
     }
 
     public static void main(String[] args) {
