@@ -25,7 +25,7 @@ public class Main{
         wordsList.addAll(Arrays.asList(wordSplit));
         System.out.println(wordsList.get(3));
 
-        HashMap<Integer, String> wordsHashMap = new HashMap<Integer, String>();
+        HashMap<String, Integer> wordsHashMap = new HashMap<String, Integer>();
         for(String word : wordsList){
             int wordAmt = 0;
             // for(int i = 0; i < wordsList.length; i++){
@@ -33,11 +33,11 @@ public class Main{
                 if(word.equals(wordToCheck)){
                     Collection<String> removeThese = Arrays.asList(word);
                     wordAmt++;
+                    wordsHashMap.put(word, wordAmt);
                     wordsList.removeAll(removeThese);
                 }            
             }
 
-            wordsHashMap.put(wordAmt, word);
             wordAmt = 0;
 
             //}
