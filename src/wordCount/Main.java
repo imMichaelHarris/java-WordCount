@@ -11,7 +11,7 @@ public class Main{
 
 
         //Remove punctuation and split string in array
-        String[] wordSplit = words.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "").split(" ");
+        String[] wordSplit = words.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "").toLowerCase().split(" ");
 
         for(int i = 0; i < wordSplit.length; i++){
             System.out.println(wordSplit[i]);
