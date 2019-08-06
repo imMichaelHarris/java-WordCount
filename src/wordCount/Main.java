@@ -13,14 +13,19 @@ public class Main{
         String[] wordSplit = words.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "").toLowerCase().split(" ");
 
         for(int i = 0; i < wordSplit.length; i++){
-            if(wordSplit[i].equals("in")){
-                System.out.println("Yes");
-            }
+            //I need the word and the number of times it appears and will add that to a hash map
+            //Convert to array list so when removing list will shift up
+            //In array list go get word, find all words that matches it, then remove that word. REPEAT
+            // if(wordSplit[i].equals("in")){
+            //     System.out.println("Yes");
+            // }
             wordsHashMap.put(i, wordSplit[i]);
         }
 
         //Create an arrayList from the String
         ArrayList<String> wordsList = new ArrayList<String>();
+        wordsList.addAll(Arrays.asList(wordSplit));
+        System.out.println(wordsList);
     }
     public static void main(String[] args){
         wordList();
