@@ -45,12 +45,17 @@ public class Main {
 
         ArrayList<HashMap.Entry<String, Integer>> wordsList = new ArrayList<HashMap.Entry<String, Integer>>();
         wordsList.addAll(wordsHashMap.entrySet());
-        System.out.println(wordsHashMap);
 
         //Stretch 
-        Collections.sort(wordList, new Comparator<HashMap.Entry<String, Integer>>() {
-            
-        };
+        Collections.sort(wordsList, new Comparator<HashMap.Entry<String, Integer>>() {
+            public int compare(HashMap.Entry<String, Integer> o1, HashMap.Entry<String, Integer> o2){
+                return o2.getValue() - o1.getValue();
+            }
+        });
+
+        for(HashMap.Entry<String, Integer> hash : wordsList){
+            System.out.println("KEY: " + hash.getKey() + " VALUE: " + hash.getValue());
+        }
     }
 
     public static void main(String[] args) {
