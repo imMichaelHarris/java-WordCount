@@ -10,8 +10,12 @@ public class Main{
         HashMap<Integer, String> wordsHashMap = new HashMap<Integer, String>();
 
 
-        //Split string in array
-        String[] wordSplit = words.split(" ");
+        //Remove punctuation and split string in array
+        String[] wordSplit = words.replaceAll("[[\\.\\?\\!\\,\\;\\:\\{\\}\\(\\)\\']]", "").split(" ");
+
+        for(int i = 0; i < wordSplit.length; i++){
+            System.out.println(wordSplit[i]);
+        }
         //Create an arrayList from the String
         ArrayList<String> wordsList = new ArrayList<String>();
     }
